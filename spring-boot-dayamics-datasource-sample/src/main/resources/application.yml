@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    dynamic:
+      primary: story
+      strict: false
+      datasource:
+        story:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/story?useSSL=false
+          username: root
+          password: root12345
+        test:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/test?useSSL=false
+          username: root
+          password: root12345
